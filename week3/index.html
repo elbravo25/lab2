@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <style>
@@ -55,6 +56,14 @@
             <li>What I want to learn for my chosen Major: Programming and coding skills</li>
             <li>Any other interesting aspect of my life: "Slow progress is still progress"</li>
         </ul>
+        <p id="current-date"></p> <!-- Added a <p> element to display the date -->
     </div>
+
+    <script>
+        // JavaScript to display the current date
+        const dateElement = document.getElementById('current-date');
+        const currentDate = new Date();
+        dateElement.textContent = `Current date: ${currentDate.toDateString()}`;
+    </script>
 </body>
 </html>
