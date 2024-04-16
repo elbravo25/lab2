@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            max-width: 300px;
+            border-radius: 50%;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="profile-img" src="edited2.jpg" alt="Graduation Pic from APC SHS">
+        <h1>Elijah Philip L. Bravo</h1>
+        <h2>Nickname: Elijah</h2>
+        <ul>
+            <li>Age: 22</li>
+            <li>Course: BSIT-MI</li>
+            <li>Scholarship: Yes (20%)</li>
+            <li>Transferee / Second Course: No</li>
+            <li>Did I choose this course: Yes</li>
+            <li>My I.T. Experience: Gaming, A little bit of coding</li>
+            <li>My Hobbies / Interests: Biking, Photography, Gaming</li>
+            <li>My Goals in life: To become rich and have a happy family</li>
+            <li>What I expect from this Mobile Programming course: To learn a lot of coding and programming</li>
+            <li>What I want to learn for my chosen Major: Programming and coding skills</li>
+            <li>Any other interesting aspect of my life: "Slow progress is still progress"</li>
+        </ul>
+        
+        <h2>JAVASCRIPT DATE SAMPLE</h2>
+        <p>Click the button to display the date.</p>
+        <button onclick="displayDate()">The time is?</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
+</body>
+</html>
+
