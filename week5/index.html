@@ -167,24 +167,14 @@
             <p>Click the button to display the date.</p>
             <button onclick="displayDate()">The time is?</button>
             <p id="demo"></p>
-
             
-            <div>
-                <h3>Bootstrap 5 Popover</h3>
-                <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="HELLO SIR JOEGENE!">Hover over me</a>
-            </div>
         </div>
     </div>
-
+    
     <script>
         function displayDate() {
             document.getElementById("demo").innerHTML = Date();
         }
-
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl);
-        });
     </script>
 </body>
 
