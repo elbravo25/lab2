@@ -21,7 +21,7 @@
 <body>
 <h1>Flexible Boxes</h1>
 
-<div class="flex-container">
+<div class="flex-container" id="container">
   <div>1</div>
   <div>2</div>
   <div>3</div>  
@@ -35,6 +35,17 @@
 <p>Try to resize the browser window.</p>
 <p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
 <p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
+
+<script>
+  
+  var container = document.getElementById("container");
+  
+  for (var i = 9; i <= 12; i++) {
+    var div = document.createElement("div");
+    div.textContent = i;
+    container.appendChild(div);
+  }
+</script>
 
 </body>
 </html>
