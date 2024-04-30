@@ -31,7 +31,7 @@ h1 {
     float: left;
 }
 
-main {
+.about-section {
     display: flex;
     justify-content: space-between;
 }
@@ -56,9 +56,4 @@ main {
 
 .list li {
     margin-bottom: 10px;
-}
-
-.about-section {
-    display: flex;
-    justify-content: space-between;
 }
