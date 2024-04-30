@@ -1,21 +1,20 @@
 body {
-    margin: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-main {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-h1 {
+h1, h2, h3 {
     text-align: center;
 }
 
 .navbar ul {
     list-style-type: none;
-    background-color: hsl(0, 0%, 25%);
-    padding: 0px;
-    margin: 0px;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
     overflow: hidden;
 }
 
@@ -28,21 +27,31 @@ h1 {
 }
 
 .navbar a:hover {
-    background-color: hsl(0, 0%, 10%);
+    background-color: #555;
 }
 
 .navbar li {
     float: left;
 }
 
-.progress {
+main {
+    padding: 20px;
+}
+
+.list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.list li {
     margin-bottom: 10px;
 }
 
-.progress-bar {
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    color: white;
-    width: 25%;
+.abilities {
+    padding-left: 20px;
+}
+
+.abilities li {
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
