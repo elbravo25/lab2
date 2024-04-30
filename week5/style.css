@@ -51,8 +51,7 @@ main {
 }
 
 .list {
-    list-style-type: none;
-    padding: 0;
+    padding-left: 20px; /* Add indentation for list items */
 }
 
 .list li {
