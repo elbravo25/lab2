@@ -57,3 +57,8 @@ main {
 .list li {
     margin-bottom: 10px;
 }
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+}
