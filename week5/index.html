@@ -26,14 +26,17 @@
 
 <script>
 // Create an object:
-const person = {type:"Student", batch:"2020", height:"5'7"};
+const person = {
+  firstName: "Elijah",
+  lastName: "Bravo",
+  age: 20,
+  eyeColor: "blue"
+};
 
 // Display some data from the object:
-document.getElementById("demo").innerHTML = "The person is a " + person.type;
-document.getElementById("demo").innerHTML = "The person's batch is " + person.batch;
-document.getElementById("demo").innerHTML = "The person's height is " + person.height;
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
 </script>
-
 
     </main>
 
