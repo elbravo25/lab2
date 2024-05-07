@@ -1,6 +1,6 @@
 const message = () => {
-const name = "Jesse";
-const age = 40;
+const name = "Elijah";
+const age = 22;
 return name + ' is ' + age + 'years old.';
 };
 
