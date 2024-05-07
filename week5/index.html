@@ -22,11 +22,18 @@
 
     <main>
         <h3>Home Page</h3>
-        <p>To be added.</p>
-        
-        <script type="module">
-        import message from "./message.js";
-        </script>
+        <p id="demo"></p>
+
+<script>
+// Create an object:
+const person = {type:"Student", batch:"2020", height:"5'7"};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML = "The person is a " + person.type;
+document.getElementById("demo").innerHTML = "The person's batch is " + person.batch;
+document.getElementById("demo").innerHTML = "The person's height is " + person.height;
+</script>
+
 
     </main>
 
