@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Details</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        function myFunction() {
+            let text;
+            let person = prompt("Please enter your name:", "Student");
+            if (person == null || person == "") {
+                text = "User cancelled the prompt.";
+            } else {
+                text = "Hello " + person + "! How are you today?";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
 </head>
 <body>
 
@@ -23,6 +36,10 @@
     <main>
         <h3>Contact Details</h3>
         <p>To be added.</p>
+
+        <p id="demo"></p>
+
+        <button onclick="myFunction()">Try it</button>
     </main>
 
 </body>
