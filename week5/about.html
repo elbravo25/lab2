@@ -20,18 +20,17 @@
         </ul>
     </nav>
 
-<main>
     <main>
-    <div class="about-section">
-        <div class="left-section">
-            <h3>About Me</h3>
-            <p>Hi, I'm Elijah, a BSIT-MI student from Asia Pacific College.</p>
+        <div class="about-section">
+            <div class="left-section">
+                <h3>About Me</h3>
+                <p><span id="profile-name"></span>, a BSIT-MI student from <span id="profile-school"></span>.</p>
+            </div>
+            <div class="right-section">
+                <img id="profile-image" src="" alt="Elijah's Image" width="365" height="548">
+            </div>
         </div>
-        <div class="right-section">
-            <img src="edited2.jpg" alt="Elijah's Image" width="365" height="548">
-        </div>
-    </div>
-    <hr> 
+        <hr> 
         <h2>Game Engines</h2>
         <ul class="list">
             <li>Spline</li>
@@ -46,7 +45,7 @@
             <li>Adobe Premiere Pro</li>
         </ul>
 
-         <h2>Relevant Abilities</h2>
+        <h2>Relevant Abilities</h2>
         <ul class="abilities">
             <li>Background in audio engineering with a solid understanding of signal processing, 3D positional audio, and mastering.</li>
             <li>Good verbal and written communication skills. Must be able to comprehend fast-paced and complex game environments.</li>
@@ -59,5 +58,20 @@
             <li>Knowledge of the game development process and game production pipeline.</li>
             <li>Fast learner, takes initiative, and meets deadlines.</li>
         </ul>
-    </div>
-</main>
+    </main>
+
+    <script>
+        const profile = {
+            name: "Elijah",
+            program: "BSIT-MI",
+            school: "Asia Pacific College",
+            image: "edited2.jpg"
+        };
+        document.getElementById("profile-name").innerText = profile.name;
+        document.getElementById("profile-program").innerText = profile.program;
+        document.getElementById("profile-school").innerText = profile.school;
+        document.getElementById("profile-image").src = profile.image;
+    </script>
+
+</body>
+</html>
