@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <h1>Personal Profile</h1>
-
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -19,15 +17,15 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
     <main>
         <div class="about-section">
             <div class="left-section">
                 <h3>About Me</h3>
-                <p><span id="profile-name"></span>, a BSIT-MI student from <span id="profile-school"></span>.</p>
+                <p>Hi, I'm Elijah, a Game Sound Designer | Producer from Asia Pacific College.</p>
+                <p>Hi, I'm Elijah, a BSIT-MI student from Asia Pacific College.</p>
             </div>
             <div class="right-section">
-                <img id="profile-image" src="" alt="Elijah's Image" width="365" height="548">
+                <img src="edited2.jpg" alt="Elijah's Image" width="365" height="548">
             </div>
         </div>
         <hr> 
@@ -37,14 +35,12 @@
             <li>RPG Maker XP</li>
             <li>Godot</li>
         </ul>
-
         <h2>Art Tools</h2>
         <ul class="list">
             <li>Adobe Photoshop</li>
             <li>Adobe Illustrator</li>
             <li>Adobe Premiere Pro</li>
         </ul>
-
         <h2>Relevant Abilities</h2>
         <ul class="abilities">
             <li>Background in audio engineering with a solid understanding of signal processing, 3D positional audio, and mastering.</li>
@@ -58,20 +54,31 @@
             <li>Knowledge of the game development process and game production pipeline.</li>
             <li>Fast learner, takes initiative, and meets deadlines.</li>
         </ul>
+
+        <div id="container">
+            <div id="animate"></div>
+        </div>
+        <p><button onclick="myMove()">Click Me</button></p> 
+
     </main>
 
     <script>
-        const profile = {
-            name: "Elijah",
-            program: "BSIT-MI",
-            school: "Asia Pacific College",
-            image: "edited2.jpg"
-        };
-        document.getElementById("profile-name").innerText = profile.name;
-        document.getElementById("profile-program").innerText = profile.program;
-        document.getElementById("profile-school").innerText = profile.school;
-        document.getElementById("profile-image").src = profile.image;
+        function myMove() {
+            let id = null;
+            const elem = document.getElementById("animate");
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame, 5);
+            function frame() {
+                if (pos == 350) {
+                    clearInterval(id);
+                } else {
+                    pos++; 
+                    elem.style.top = pos + "px"; 
+                    elem.style.left = pos + "px"; 
+                }
+            }
+        }
     </script>
-
 </body>
 </html>
